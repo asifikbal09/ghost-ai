@@ -1,0 +1,34 @@
+"use client"
+
+import { PanelLeftClose, PanelLeftOpen } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+
+interface EditorNavbarProps {
+  isSidebarOpen: boolean
+  onSidebarToggle: () => void
+}
+
+export function EditorNavbar({
+  isSidebarOpen,
+  onSidebarToggle,
+}: EditorNavbarProps) {
+  const ToggleIcon = isSidebarOpen ? PanelLeftClose : PanelLeftOpen
+
+  return (
+    <header className="fixed inset-x-0 top-0 z-40 grid h-14 grid-cols-[1fr_auto_1fr] items-center border-b border-surface-border bg-surface">
+      <div className="flex items-center px-3">
+        <Button
+          aria-label={isSidebarOpen ? "Close projects sidebar" : "Open projects sidebar"}
+          onClick={onSidebarToggle}
+          size="icon"
+          variant="ghost"
+        >
+          <ToggleIcon className="h-5 w-5" />
+        </Button>
+      </div>
+      <div />
+      <div />
+    </header>
+  )
+}
