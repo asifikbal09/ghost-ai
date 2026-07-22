@@ -5,6 +5,12 @@ interface AuthShellProps {
   heading: string;
 }
 
+/**
+ * Renders a responsive authentication layout with branding and page content.
+ *
+ * @param heading - The title displayed in the responsive header on smaller screens
+ * @param children - The authentication content rendered in the main panel
+ */
 export function AuthShell({ children, heading }: AuthShellProps) {
   return (
     <main className="grid min-h-screen bg-base lg:grid-cols-2">

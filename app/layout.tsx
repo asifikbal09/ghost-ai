@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   description: "A collaborative system design workspace.",
 };
 
+/**
+ * Provides the root HTML structure and Clerk authentication context for the application.
+ *
+ * @param children - Application content rendered within the root layout
+ * @returns The root HTML and body elements containing the application content
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
