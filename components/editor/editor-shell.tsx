@@ -5,6 +5,9 @@ import { useState } from "react";
 import { EditorNavbar } from "@/components/editor/editor-navbar";
 import { ProjectSidebar } from "@/components/editor/project-sidebar";
 
+/**
+ * Renders the editor layout with a navigation bar and a toggleable project sidebar.
+ */
 export function EditorShell() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
