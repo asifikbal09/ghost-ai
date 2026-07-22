@@ -5,11 +5,11 @@ change.
 
 ## Current Phase
 
-- Editor chrome
+- Authentication
 
 ## Current Goal
 
-- Implement the reusable editor navbar and floating project sidebar shell.
+- Implement Clerk authentication, protected routes, and the native user menu.
 
 ## Completed
 
@@ -18,10 +18,12 @@ change.
 - Installed Lucide React and the shared `cn()` class-merging utility.
 - Added reusable editor navbar and floating project sidebar shell with project tabs, empty states, and a new-project action.
 - Confirmed the existing token-based shadcn Dialog composition supports future title, description, and footer actions without instantiating a dialog in this feature.
+- Added Clerk provider setup using the dark theme and existing design tokens.
+- Added protected `/editor` routing, public sign-in/sign-up pages, root redirects, and Clerk's native user menu.
 
 ## In Progress
 
-- None.
+- Verify the authentication feature build.
 
 ## Next Up
 
